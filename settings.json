@@ -1,0 +1,20 @@
+{
+    "quarto.path": "/usr/local/bin/quarto",
+    "python.defaultInterpreterPath": "/home/coder/venv/bin/python",
+    "python.venvPath": "/home/coder/venv",
+    "jupyter.widgetScriptSources": ["local"],
+    "jupyter.experiments.enabled": true,
+    "quarto.render.previewType": "browser",
+    "quarto.render.autoPreview": true,
+    "quarto.render.renderOnSave": true,
+    "quarto.render.showRenderTime": true,
+    "quarto.render.timeout": 300,
+    "quarto.render.ports": [4200, 4201, 4202, 4203, 4204],
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.enabled": false,
+    "[quarto]": {
+        "editor.wordWrap": "on",
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    }
+}
+
