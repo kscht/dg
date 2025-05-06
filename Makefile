@@ -1,11 +1,19 @@
 # Загрузка настроек из файла
 include settings.env
 
-.PHONY: build run stop clean logs restart shell init-dirs purge
+.PHONY: build run stop clean logs restart shell purge save-image load-image
 
 # Сборка Docker-образа
 build:
 	sudo docker build -t vscode .
+
+# Сохранение образа в файл
+save-image:
+	sudo docker save -o vscode.tar $(IMAGE_NAME)
+
+# Загрузка образа из файла
+load-image:
+	sudo docker load -i vscode.tar
 
 # Запуск контейнера
 init:
